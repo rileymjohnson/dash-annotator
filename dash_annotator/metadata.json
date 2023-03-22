@@ -1,0 +1,325 @@
+{
+  "src/lib/components/DashAnnotator.react.js": {
+    "description": "DashAnnotator is used to annotate PDF, HTML,\r\nand text files. It accepts a base64 encoding\r\nPDF data URL, an HTML string, and a raw text\r\nstring, respectively.",
+    "displayName": "DashAnnotator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "highlights": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "List of highlights applied to text.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of highlights.",
+        "defaultValue": {
+          "value": "'lightcoral'",
+          "computed": false
+        }
+      },
+      "event": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Name of event that has occurred."
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Base64 encoded PDF, HTML, or Text string."
+      },
+      "data_type": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Type of data passed (pdf, html, text)."
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of annotator container.",
+        "defaultValue": {
+          "value": "'100vh'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Width of annotator container.",
+        "defaultValue": {
+          "value": "'100%'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/HTMLAnnotator.react.js": {
+    "description": "HTMLAnnotator is used to annotate HTML. It renders\r\nan HTML string, which the user can highlight.",
+    "displayName": "HTMLAnnotator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "highlights": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "List of highlights applied to text.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of highlights.",
+        "defaultValue": {
+          "value": "'lightcoral'",
+          "computed": false
+        }
+      },
+      "event": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Name of event that has occurred."
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "HTML string."
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of annotator container.",
+        "defaultValue": {
+          "value": "'100vh'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Width of annotator container.",
+        "defaultValue": {
+          "value": "'100%'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/PDFAnnotator.react.js": {
+    "description": "PDFAnnotator is used to annotate PDF files. It\r\nrenders a base64 encoded  PDF data url, which\r\nthe user can highlight.",
+    "displayName": "PDFAnnotator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "highlights": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "List of highlights applied to text.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of highlights.",
+        "defaultValue": {
+          "value": "'lightcoral'",
+          "computed": false
+        }
+      },
+      "event": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Name of event that has occurred."
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Base64 encoded PDF string."
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of annotator container.",
+        "defaultValue": {
+          "value": "'100vh'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Width of annotator container.",
+        "defaultValue": {
+          "value": "'100%'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/TextAnnotator.react.js": {
+    "description": "TextAnnotator is used to annotate text. It renders\r\na text string, which the user can highlight.\r\nNote: this class is the same as the `HTMLAnnotator`\r\nclass, except it accepts text instead of HTML and\r\npasses that text to the `HTMLAnnotator` wrapped\r\nin a `<pre />` tag.",
+    "displayName": "TextAnnotator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "highlights": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "List of highlights applied to text.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color of highlights.",
+        "defaultValue": {
+          "value": "'lightcoral'",
+          "computed": false
+        }
+      },
+      "event": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Name of event that has occurred."
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text string."
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Height of annotator container.",
+        "defaultValue": {
+          "value": "'100vh'",
+          "computed": false
+        }
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Width of annotator container.",
+        "defaultValue": {
+          "value": "'100%'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\r\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

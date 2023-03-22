@@ -1,0 +1,11 @@
+include dash_annotator/dash_annotator.min.js
+include dash_annotator/dash_annotator.min.js.map
+include dash_annotator/async-*.js
+include dash_annotator/async-*.js.map
+include dash_annotator/*-shared.js
+include dash_annotator/*-shared.js.map
+include dash_annotator/metadata.json
+include dash_annotator/package-info.json
+include README.md
+include LICENSE
+include package.json

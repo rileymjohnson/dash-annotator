@@ -1,0 +1,72 @@
+:root {
+  --pdf-selection-color: yellow;
+}
+
+.pdf-annotator > div {
+  position: absolute;
+  overflow: auto;
+
+  & > div {
+    padding-bottom: 0;
+    margin: unset 0;
+
+    .page {
+      margin: 0 auto 10px;
+      position: relative;
+
+      .canvasWrapper {
+        overflow: hidden;
+        position: absolute;
+    
+        canvas {
+          margin: 0;
+          display: block;
+    
+          [hidden] {
+            display: none;
+          }
+        }
+      }
+
+      .textLayer {
+        mix-blend-mode: multiply;
+        position: absolute;
+      
+        & > .highlight-layer {
+          opacity: 1;
+      
+          .highlight {
+            cursor: pointer;
+            position: absolute;
+            z-index: 1;
+          }
+        }
+      
+        span, br {
+          color: transparent;
+          position: absolute;
+          white-space: pre;
+          cursor: text;
+          transform-origin: 0% 0%;
+        }
+        
+        span.markedContent {
+          top: 0;
+          height: 0;
+        }
+      
+        br ::selection {
+          background: transparent;
+        }
+      
+        & ::selection {
+          background: var(--pdf-selection-color);
+        }
+      }
+
+      .annotationLayer {
+        display: none;
+      }
+    }
+  }
+}
