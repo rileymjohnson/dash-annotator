@@ -18,9 +18,14 @@ function convertDataURIToBinary(dataURI) {
 }
 
 export default class PDFLoader extends Component {
-    state = {
-        pdfDocument: null,
-        error: null,
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            pdfDocument: null,
+            error: null,
+        }
+        console.log('loader', this)
     }
 
     static defaultProps = {

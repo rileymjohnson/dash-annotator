@@ -18,7 +18,7 @@ export default class PDFAnnotator extends Component {
             lastHoveredHighlight: null
         }
 
-        console.log(this)
+        console.log('annotator', this)
         this.highlighter = createRef()
     }
 

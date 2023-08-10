@@ -7,9 +7,9 @@ import random
 import base64
 import json
 #with open('../annotator/src/annotator/assets/documents/construction.pdf', 'rb') as f:
-#with open('C:/Users/Riley/Downloads/vertical.pdf', 'rb') as f:
-#    pdf_data = base64.b64encode(f.read()).decode()
-#    pdf_data = f'data:application/pdf;base64,{pdf_data}'
+with open('C:/Users/Riley/Downloads/example_pdf.pdf', 'rb') as f:
+    pdf_data = base64.b64encode(f.read()).decode()
+    pdf_data = f'data:application/pdf;base64,{pdf_data}'
 with open('sample_html_file.html', 'r', encoding='utf-8') as f:
     html_data = f.read()
 text_data = """
